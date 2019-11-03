@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <title>Railway</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Patrick Wyler">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div th:insert="fragments/navigation.html"></div>
+<br/>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Railway</h1>
+        <p class="lead">This is a TEKO project created by Patrick Wyler</p>
+        <hr class="my-4">
+        <p>
+            <strong>Features:</strong>
+            <ul>
+                <li>Managing stations, traces, lines, trains, carriages and employees</li>
+                <li>Generating stationplan</li>
+                <li>Generating timetable</li>
+                <li>Generating work schedule for employees and trains</li>
+            </ul>
+        </p>
+        <br/>
+        <br/>
+        <p class="lead">
+            <form action="#" th:action="@{/createTestData}" method="post">
+                <input type="submit" class="btn btn-warning btn-lg" role="button" value="Create Testdata"/>
+            </form>
+        </p>
+    </div>
+</div>
+
+<div th:insert="fragments/scripts.html"></div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" width="30" height="30" alt="" class="mr-2">
+        Railway
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/stations/all}"
+                   id="navbarDropdownMenuLinkStations" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Stations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkStations">
+                    <a class="dropdown-item" href="#" th:href="@{/stations/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/stations/create}">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/traces/all}" id="navbarDropdownMenuLinkTraces"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Traces
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkTraces">
+                    <a class="dropdown-item" href="#" th:href="@{/traces/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/traces/create}">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/lines/all}" id="navbarDropdownMenuLinkLines"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lines
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLines">
+                    <a class="dropdown-item" href="#" th:href="@{/lines/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/lines/create}">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/trains/all}" id="navbarDropdownMenuLinkTrains"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Trains
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkTrains">
+                    <a class="dropdown-item" href="#" th:href="@{/trains/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/trains/create}">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/carriages/all}"
+                   id="navbarDropdownMenuLinkCarriages" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Carriages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkCarriages">
+                    <a class="dropdown-item" href="#" th:href="@{/carriages/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/carriages/create}">Create</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" th:href="@{/employees/all}"
+                   id="navbarDropdownMenuLinkEmployees" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Employees
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEmployees">
+                    <a class="dropdown-item" href="#" th:href="@{/employees/all}">List</a>
+                    <a class="dropdown-item" href="#" th:href="@{/employees/create}">Create</a>
+                </div>
+            </li>
+            <li>
+                <div style="width: 100px; height:10px;"/>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-warning" href="#" th:href="@{/plans/timetable}">Timetable</a>
+            </li>
+            <li>
+                <div style="width: 10px; height:10px;"/>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-warning" href="#" th:href="@{/plans/stationplan}">Stationplan</a>
+            </li>
+            <li>
+                <div style="width: 10px; height:10px;"/>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-warning" href="#" th:href="@{/plans/resourceplan}">Resourceplan</a>
+            </li>
+            <li>
+                <div style="width: 10px; height:10px;"/>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-warning" href="#" th:href="@{/plans/workschedule}">Work schedule</a>
+            </li>
+            <li>
+                <div style="width: 10px; height:10px;"/>
+            </li>
+            <li class="nav-item">
+                <form action="#" th:action="@{/plans/reset}" method="post">
+                    <input type="submit" class="btn btn-danger" value="Reset"/>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
